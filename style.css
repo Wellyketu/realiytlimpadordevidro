@@ -23,6 +23,13 @@ body {
 
 header {
     padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    transition: background-color 0.3s ease;
 }
 
 header > .interface {
@@ -96,7 +103,7 @@ section.topo-do-site .flex {
     border-radius: 20px;
 }
 
-.img-topo-do-site {
+.img-topo-site {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
@@ -110,172 +117,4 @@ section.topo-do-site .flex {
     }
 }
 
-section.meus-trabalhos h2 {
-    padding: 40px 4%;
-    font-size: 50px;
-    text-align: center;
-    color: #fff;
-}
-
-.meus-trabalhos img {
-    align-items: center;
-    padding: 30px 4%;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 50px;
-    margin: 20px;
-}
-
-.meus-trabalhos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.meus-trabalhos img {
-    width: 30%;
-    margin: 5px;
-    transition: opacity 0.5s ease;
-}
-
-.meus-trabalhos img:hover {
-    opacity: 0.8;
-    justify-items: center;
-}
-
-.zoom-in {
-    transform: scale(1.5);
-    transition: transform 5s ease;
-}
-
-.contato h3 {
-    padding: 40px 4%;
-    font-size: 50px;
-    text-align: center;
-    color: #fff;
-}
-
-.btn-botão {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.btn-botão a {
-    text-decoration: none;
-}
-
-.btn-botão button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-botão button:hover {
-    background-color: darkblue;
-}
-
-.btn-botão a + a {
-    margin-left: 20px;
-}
-
-.btn-botão {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.btn-botão a {
-    text-decoration: none;
-}
-
-.btn-botão button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-botão button:hover {
-    background-color: darkblue;
-}
-
-.btn-botão a + a {
-    margin-left: 20px;
-}
-
-.btn-botão i {
-    font-size: 24px;
-    margin-right: 8px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: black;
-    margin-top: 100px;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: black;
-    transition: background-color 0.3s ease;
-}
-
-header a {
-    color: rgb(95, 94, 94);
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
-}
-
-header a:hover {
-    color: #fff;
-    transform: scale(1.05);
-}
-
-main {
-    margin-top: 70px;
-}
-
-header.scrolled {
-    background-color: #000;
-}
-
-@media screen and (max-width: 1000px) {
-    .flex {
-        flex-direction: column-reverse;
-    }
-
-    .menu-desktop,
-    .btn-contato {
-        display: none;
-    }
-
-    .btn-botão {
-        text-align: center;
-    }
-
-    .menu-mobile {
-        display: block;
-    }
-}
+section.meus-trabalhos h
